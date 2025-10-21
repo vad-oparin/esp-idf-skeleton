@@ -24,9 +24,14 @@ idf.py flash monitor
 ### Testing
 
 ```bash
-# Build and run tests
+# Build and run tests on hardware
 idf.py -C test build flash monitor
+
+# Run unit tests without hardware (QEMU simulation)
+idf.py -C test qemu monitor
 ```
+
+Note: QEMU support requires ESP-IDF v5.0+ and is available for specific targets (esp32, esp32c3).
 
 ## Project Structure
 
