@@ -32,10 +32,46 @@ idf.py -C test build flash monitor
 
 ```
 ├── main/              # Application entry point
-├── components/        # Reusable components
+├── components/        # Reusable components (add your own)
 ├── test/              # Unity tests
 ├── .vscode/           # VS Code configuration
 └── .idea/             # CLion configuration
+```
+
+## IDE Setup
+
+### VS Code
+
+1. Install [ESP-IDF extension](https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension)
+2. Open project folder
+3. The `.vscode/c_cpp_properties.json` provides IntelliSense configuration
+4. Use extension commands for build/flash/monitor
+
+### CLion
+
+1. Open project as CMake project
+2. Set CMake options: `-DIDF_TARGET=<target>`
+3. The `.idea/cmake.xml` provides CMake configuration
+4. Use built-in CMake tools for building
+
+## Development Guidelines
+
+### Error Handling
+
+Always wrap ESP-IDF API calls that return `esp_err_t` with `ESP_ERROR_CHECK()`:
+
+```c
+esp_err_t ret = nvs_flash_init();
+ESP_ERROR_CHECK(ret);
+```
+
+### Logging
+
+Use ESP-IDF logging macros with a component tag:
+
+```c
+static const char *TAG = "MY_COMPONENT";
+ESP_LOGI(TAG, "Initialization complete");
 ```
 
 ## License
