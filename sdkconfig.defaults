@@ -1,0 +1,11 @@
+# Universal ESP-IDF configuration defaults
+# These settings are chip-agnostic and work across all ESP-IDF supported targets
+
+# Logging
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# FreeRTOS
+CONFIG_FREERTOS_HZ=1000
+
+# Common settings
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y

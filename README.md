@@ -1,6 +1,6 @@
 # ESP-IDF Skeleton
 
-Minimal template for ESP32/ESP32-S3/ESP8266 projects using ESP-IDF with modular structure and best practices.
+Minimal template for all ESP-IDF supported chips using modular structure and best practices.
 
 ## Quick Start
 
@@ -11,8 +11,8 @@ Install ESP-IDF following the [official guide](https://docs.espressif.com/projec
 ### Build
 
 ```bash
-# Set target chip
-idf.py set-target esp32        # or esp32s3, esp8266
+# Set target chip (examples: esp32, esp32s2, esp32s3, esp32c3, esp32c6, esp32h2, esp8266)
+idf.py set-target <target>
 
 # Build project
 idf.py build
