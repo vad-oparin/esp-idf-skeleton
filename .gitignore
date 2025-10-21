@@ -1,0 +1,67 @@
+# Claude Code guidance
+CLAUDE.md
+.docs/
+.claude/
+
+# Build artifacts
+build/
+build_*_*/
+
+# ESP-IDF configuration
+sdkconfig
+sdkconfig.old
+.config
+
+# Dependency management
+dependencies.lock
+managed_components/
+
+# IDE - VS Code
+.vscode/
+
+# IDE - CLion/IntelliJ
+.idea/
+cmake-build-*/
+
+# IDE - Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Editor files
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# Python
+*.pyc
+__pycache__/
+.mypy_cache/
+
+# C/C++ build artifacts
+*.o
+*.a
+*.so
+*.gcda
+*.gcno
+coverage.info
+coverage_report/
+
+# Testing
+TEST_LOGS/
+pytest_embedded_log/
+XUNIT_RESULT*.xml
+
+# Tags and indexes
+GTAGS
+GRTAGS
+GPATH
+.clangd
+
+# OS
+.DS_Store
+.cache/
+
+# Documentation build
+docs/_build/
