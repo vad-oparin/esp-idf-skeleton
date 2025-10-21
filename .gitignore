@@ -16,11 +16,7 @@ sdkconfig.old
 dependencies.lock
 managed_components/
 
-# IDE - VS Code
-.vscode/
-
 # IDE - CLion/IntelliJ
-.idea/
 cmake-build-*/
 
 # IDE - Sublime Text
