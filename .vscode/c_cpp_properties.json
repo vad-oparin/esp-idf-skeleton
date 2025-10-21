@@ -2,7 +2,6 @@
     "configurations": [
         {
             "name": "ESP-IDF",
-            "compilerPath": "${env:IDF_PATH}/tools/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "includePath": [
