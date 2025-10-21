@@ -21,6 +21,13 @@ idf.py build
 idf.py flash monitor
 ```
 
+### Testing
+
+```bash
+# Build and run tests
+idf.py -C test build flash monitor
+```
+
 ## Project Structure
 
 ```
